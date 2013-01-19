@@ -39,4 +39,5 @@
 # - theora
 # - icecast
 # - libshout
-# 
+# - libav
+# - glfw

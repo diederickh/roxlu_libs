@@ -71,6 +71,14 @@ if [ ! -d  ${sd}/libav ] ; then
     git reset --hard 822b0728f0e3c3ba60b20bd4fd971d5c4a3fe3e9
 fi
 
+# glfw 
+if [ ! -d ${sd}/glfw ] ; then 
+    mkdir ${sd}/glfw
+    cd ${sd}/glfw/
+    git clone https://github.com/elmindreda/glfw.git .
+    git reset --hard 747b6d880563c0461df028d9e287652f16de7b17
+fi
+
 function download {
     dir=${1}
     url=${2}
