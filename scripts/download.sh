@@ -49,41 +49,84 @@ if [ ! -d ${sd}/libyuv ] ; then
     ${sd}/libyuv/trunk/tools/clang/scripts/update.sh
 fi
 
+# theora
+if [ ! -d ${sd}/theora ] ; then
+    mkdir ${sd}/theora
+    cd ${sd}/theora
+    svn co -r 18763 http://svn.xiph.org/trunk/theora .
+fi
+
+# icecast 
+if [ ! -d ${sd}/icecast ] ; then 
+    mkdir ${sd}/icecast
+    cd ${sd}/icecast
+    svn co -r 18773 http://svn.xiph.org/icecast/trunk/icecast .
+fi
+
+# libav 
+if [ ! -d  ${sd}/libav ] ; then 
+    mkdir ${sd}/libav
+    cd ${sd}/libav
+    git clone git://git.libav.org/libav.git .
+    git reset --hard 822b0728f0e3c3ba60b20bd4fd971d5c4a3fe3e9
+fi
+
 function download {
     dir=${1}
     url=${2}
     file=${3}
     extracted_dir=${4}
+    is_bz=${5}
     dest=${sd}/${dir}
 
     if [ ! -d ${dest} ] ; then 
          mkdir ${dest}
          cd ${dest}
          curl -L ${url} -o ${file}
-         tar -zxvf ${file}
+         if [ ${is_bz} -eq 0 ] ; then 
+             tar -zxvf ${file}
+         elif [ ${is_bz} -eq 1 ] ; then 
+             tar -jxvf ${file}
+         else 
+             xz -d ${file}
+             tar -xvf ${file%.xz}
+         fi
          mv ${extracted_dir}/* .
     fi 
 }
 
 
-download libjpeg "http://www.ijg.org/files/jpegsrc.v9.tar.gz" "jpegsrc.v9.tar.gz" "jpeg-9"
-download libpng "http://prdownloads.sourceforge.net/libpng/libpng-1.5.13.tar.gz?download" "libpng-1.5.13.tar.gz" "libpng-1.5.13"
-download libssl "http://www.openssl.org/source/openssl-1.0.1c.tar.gz" "openssl-1.0.1c.tar.gz" "openssl-1.0.1c"
-download liblamemp3 "http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.5.tar.gz" "lame-3.99.tar.gz" "lame-3.99.5" 
-download yasm "http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz" "yasm-1.2.0.tar.gz" "yasm-1.2.0"
-download pcre "ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz" "pcre-8.32.tar.gz" "pcre-8.32" 
-download curl "http://curl.haxx.se/download/curl-7.28.1.tar.gz" "curl-7.28.1.tar.gz" "curl-7.28.1"
-download jansson "http://www.digip.org/jansson/releases/jansson-2.4.tar.gz" "jansson-2.4.tar.gz" "jansson-2.4"
-download portaudio "http://portaudio.com/archives/pa_stable_v19_20111121.tgz"  "pa_stable_v19_20111121.tgz" "portaudio"
-download libffi "ftp://sourceware.org/pub/libffi/libffi-3.0.11.tar.gz" "libffi-3.0.11.tar.gz" "libffi-3.0.11"
-download iconv "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz" "libiconv-1.14.tar.gz" "libiconv-1.14"
-download libtool "http://ftp.gnu.org/gnu/libtool/libtool-2.4.tar.gz" "libtool-2.4.tar.gz" "libtool-2.4"
-download autoconf "http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz" "autoconf-2.69.tar.gz" "autoconf-2.69"
-download automake "http://ftp.gnu.org/gnu/automake/automake-1.12.6.tar.gz" "automake-1.12.6.tar.gz" "automake-1.12.6"
-download gettext "http://ftp.gnu.org/pub/gnu/gettext/gettext-0.18.2.tar.gz" "gettext-0.18.2.tar.gz" "gettext-0.18.2"
-download glib "http://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.xz" "glib-2.34.3.tar.xz" "glib-2.34.3"
-download pkgconfig "http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.tar.gz" "pkg-config-0.27.tar.gz" "pkg-config-0.27"
-download pixman "http://cairographics.org/releases/pixman-0.28.2.tar.gz" "pixman-0.28.2.tar.gz" "pixman-0.28.2"
-download freetype "http://download.savannah.gnu.org/releases/freetype/freetype-2.4.11.tar.gz" "freetype-2.4.11.tar.gz" "freetype-2.4.11"
-download fontconfig "http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2"
-download poppler "http://poppler.freedesktop.org/poppler-0.22.0.tar.gz" "poppler-0.22.0.tar.gz" "poller-0.22.0"
+#download libjpeg "http://www.ijg.org/files/jpegsrc.v9.tar.gz" "jpegsrc.v9.tar.gz" "jpeg-9" # gives error with poppler + libtiff
+download libjpeg "http://www.ijg.org/files/jpegsrc.v8d.tar.gz" "jpegsrc.v8d.tar.gz" "jpeg-8d" 0
+download libtiff "ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.3.tar.gz" "tiff-4.0.3.tar.gz" "tiff-4.0.3" 0
+download libpng "http://prdownloads.sourceforge.net/libpng/libpng-1.5.13.tar.gz?download" "libpng-1.5.13.tar.gz" "libpng-1.5.13" 0
+download libssl "http://www.openssl.org/source/openssl-1.0.1c.tar.gz" "openssl-1.0.1c.tar.gz" "openssl-1.0.1c" 0
+download liblamemp3 "http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.5.tar.gz" "lame-3.99.tar.gz" "lame-3.99.5" 0
+download yasm "http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz" "yasm-1.2.0.tar.gz" "yasm-1.2.0" 0
+download pcre "ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz" "pcre-8.32.tar.gz" "pcre-8.32" 0
+download curl "http://curl.haxx.se/download/curl-7.28.1.tar.gz" "curl-7.28.1.tar.gz" "curl-7.28.1" 0
+download jansson "http://www.digip.org/jansson/releases/jansson-2.4.tar.gz" "jansson-2.4.tar.gz" "jansson-2.4" 0
+download portaudio "http://portaudio.com/archives/pa_stable_v19_20111121.tgz"  "pa_stable_v19_20111121.tgz" "portaudio" 0
+download libffi "ftp://sourceware.org/pub/libffi/libffi-3.0.11.tar.gz" "libffi-3.0.11.tar.gz" "libffi-3.0.11" 0 
+download iconv "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz" "libiconv-1.14.tar.gz" "libiconv-1.14" 0
+download libtool "http://ftp.gnu.org/gnu/libtool/libtool-2.4.tar.gz" "libtool-2.4.tar.gz" "libtool-2.4" 0 
+download autoconf "http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz" "autoconf-2.69.tar.gz" "autoconf-2.69" 0 
+download automake "http://ftp.gnu.org/gnu/automake/automake-1.12.6.tar.gz" "automake-1.12.6.tar.gz" "automake-1.12.6" 0 
+download gettext "http://ftp.gnu.org/pub/gnu/gettext/gettext-0.18.2.tar.gz" "gettext-0.18.2.tar.gz" "gettext-0.18.2" 0 
+download glib "http://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.xz" "glib-2.34.3.tar.xz" "glib-2.34.3" 0 
+download pkgconfig "http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.tar.gz" "pkg-config-0.27.tar.gz" "pkg-config-0.27" 0
+download pixman "http://cairographics.org/releases/pixman-0.28.2.tar.gz" "pixman-0.28.2.tar.gz" "pixman-0.28.2" 0 
+download freetype "http://download.savannah.gnu.org/releases/freetype/freetype-2.4.11.tar.gz" "freetype-2.4.11.tar.gz" "freetype-2.4.11" 0
+download fontconfig "http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2" 0
+download zlib "http://zlib.net/zlib-1.2.7.tar.gz" "zlib-1.2.7.tar.gz" "zlib-1.2.7" 0
+download poppler "http://poppler.freedesktop.org/poppler-0.22.0.tar.gz" "poppler-0.22.0.tar.gz" "poppler-0.22.0" 0
+download harfbuzz "http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12" 1
+download cairo "http://cairographics.org/releases/cairo-1.12.10.tar.xz" "cairo-1.12.10.tar.xz" "cairo-1.12.10" 2
+download pango "http://ftp.gnome.org/pub/GNOME/sources/pango/1.32/pango-1.32.6.tar.xz" "pango-1.32.6.tar.zx" "pango-1.32.6" 2
+download libogg "http://downloads.xiph.org/releases/ogg/libogg-1.3.0.tar.gz" "libogg-1.3.0.tar.gz" "libogg-1.3.0" 0
+download libvorbis "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3" 0
+download libspeex "http://downloads.xiph.org/releases/speex/speex-1.2rc1.tar.gz" "libspeex-1.2rc1.tar.gz" "speex-1.2rc1" 0
+#download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz" "libxml2-2.9.0.tar.gz" "libxml2-2.9.0" 0  # has bug
+download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz" "libxml2-2.8.0.tar.gz" "libxml2-2.8.0" 0
+download libshout "http://downloads.xiph.org/releases/libshout/libshout-2.3.1.tar.gz" "libshout-2.3.1.tar.gz" "libshout-2.3.1" 0
+

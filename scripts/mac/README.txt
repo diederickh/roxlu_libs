@@ -2,9 +2,12 @@
 # 
 # You should compile the libraries in this order:
 # 
+# - zlib
+# - libxml <- order not tested
 # - libuv
 # - libpng
 # - libjpeg
+# - libtiff <- not tested in this order
 # - libssl
 # - liblamemp3
 # - yasm
@@ -25,3 +28,15 @@
 # - pkg-config
 # - pixman
 # - freetype
+# - fontconfig
+# - poppler
+# - harfbuzz
+# - cairo
+# - pango
+# - ogg
+# - vorbis
+# - speex
+# - theora
+# - icecast
+# - libshout
+# 
