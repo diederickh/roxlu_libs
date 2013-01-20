@@ -124,7 +124,7 @@ download autoconf "http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz" "autoco
 download automake "http://ftp.gnu.org/gnu/automake/automake-1.12.6.tar.gz" "automake-1.12.6.tar.gz" "automake-1.12.6" 0 
 download gettext "http://ftp.gnu.org/pub/gnu/gettext/gettext-0.18.2.tar.gz" "gettext-0.18.2.tar.gz" "gettext-0.18.2" 0 
 download gettext_win "http://winkde.org/pub/kde/ports/win32/repository-4.8/win32libs/gettext-vc100-0.18-src.tar.bz2" "gettext-vc100-0.18-src.tar.bz2" "gettext-vc100-0.18-src" 1
-download glib "http://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.xz" "glib-2.34.3.tar.xz" "glib-2.34.3" 0 
+download glib "http://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.xz" "glib-2.34.3.tar.xz" "glib-2.34.3" 2 
 download pkgconfig "http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.tar.gz" "pkg-config-0.27.tar.gz" "pkg-config-0.27" 0
 download pixman "http://cairographics.org/releases/pixman-0.28.2.tar.gz" "pixman-0.28.2.tar.gz" "pixman-0.28.2" 0 
 download freetype "http://download.savannah.gnu.org/releases/freetype/freetype-2.4.11.tar.gz" "freetype-2.4.11.tar.gz" "freetype-2.4.11" 0
@@ -137,8 +137,8 @@ download pango "http://ftp.gnome.org/pub/GNOME/sources/pango/1.32/pango-1.32.6.t
 download libogg "http://downloads.xiph.org/releases/ogg/libogg-1.3.0.tar.gz" "libogg-1.3.0.tar.gz" "libogg-1.3.0" 0
 download libvorbis "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3" 0
 download libspeex "http://downloads.xiph.org/releases/speex/speex-1.2rc1.tar.gz" "libspeex-1.2rc1.tar.gz" "speex-1.2rc1" 0
-#download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz" "libxml2-2.9.0.tar.gz" "libxml2-2.9.0" 0  # has bug
-download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz" "libxml2-2.8.0.tar.gz" "libxml2-2.8.0" 0
+#download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz" "libxml2-2.9.0.tar.gz" "libxml2-2.9.0" 0  # has bug, but works on window, not on mac
+download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz" "libxml2-2.8.0.tar.gz" "libxml2-2.8.0" 0 # used on windows
 download libshout "http://downloads.xiph.org/releases/libshout/libshout-2.3.1.tar.gz" "libshout-2.3.1.tar.gz" "libshout-2.3.1" 0
 download winiconv "https://github.com/downloads/hexchat/gtk-win32/win-iconv-0.0.4.7z" "win-iconv-0.0.4.7z" "win-iconv-0.0.4" 3
-
+download m4 "http://ftp.gnu.org/gnu/m4/m4-1.4.16.tar.gz" "m4-1.4.16.tar.gz" "m4-1.4.16" 0
