@@ -18,11 +18,13 @@ export PKG_CONFIG=${bd}/bin/pkg-config
 export PKG_CONFIG_PATH=${bd}/lib/pkgconfig
 export FONTCONFIG_CFLAGS="-I${bd}/include/"
 export FONTCONFIG_LIBS="-L${bd}/lib/ -lfontconfig"
-export CAIRO_CFLAGS="-I${bd}/include/"
+export CAIRO_CFLAGS="-I${bd}/include/ -I${bd}/include/cairo/"
 export CAIRO_LIBS="-L${bd}/lib -lcairo"
 export FREETYPE_CFLAGS="-I${bd}/include/freetype2/"
 export FREETYPE_LIBS="-L${bd}/lib/ -lfreetype"
 export LIBS="-L${bd}/lib/ -framework CoreFoundation -framework ApplicationServices"
+
+
 
 cd ${sd}/pango
 ./configure --prefix=${bd} \
