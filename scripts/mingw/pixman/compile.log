@@ -1,0 +1,473 @@
+checking for a BSD-compatible install... /bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking build system type... i686-pc-mingw32
+checking host system type... i686-pc-mingw32
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking dependency style of gcc... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... c:/mingw/mingw32/bin/ld.exe
+checking if the linker (c:/mingw/mingw32/bin/ld.exe) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /mingw/bin/nm
+checking the name lister (/mingw/bin/nm) interface... BSD nm
+checking whether ln -s works... no, using cp -p
+checking the maximum length of command line arguments... 8192
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for c:/mingw/mingw32/bin/ld.exe option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... file_magic ^x86 archive import|^x86 DLL
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /mingw/bin/nm output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (c:/mingw/mingw32/bin/ld.exe) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for getisax... no
+checking whether byte ordering is bigendian... no
+checking for inline... inline
+checking whether the compiler supports -Werror... yes
+checking size of long... 4
+checking whether __SUNPRO_C is declared... no
+checking whether __amd64 is declared... no
+checking whether the compiler supports -Wall... yes
+checking whether the compiler supports -fno-strict-aliasing... yes
+checking for gcc option to support OpenMP... -fopenmp
+checking whether the compiler supports -fvisibility=hidden... no
+checking whether the compiler supports -xldscope=hidden... no
+checking whether to use Loongson MMI assembler... no
+checking whether to use MMX intrinsics... yes
+checking whether to use SSE2 intrinsics... yes
+checking whether to use VMX/Altivec intrinsics... no
+checking whether to use ARM SIMD assembler... no
+checking whether to use ARM NEON assembler... no
+checking whether to use ARM IWMMXT intrinsics... no
+checking whether to use MIPS DSPr2 assembler... no
+checking whether to use GNU-style inline assembler... yes
+checking for pkg-config... no
+checking for pixman_version_string in -lpixman-1... yes
+checking for GTK... no
+checking for posix_memalign... no
+checking for sigaction... no
+checking for alarm... no
+checking sys/mman.h usability... no
+checking sys/mman.h presence... no
+checking for sys/mman.h... no
+checking for mmap... no
+checking for mprotect... yes
+checking for getpagesize... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking for feenableexcept in -lm... no
+checking for gettimeofday... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for thread local storage (TLS) support... __thread
+checking for __attribute__((constructor))... yes
+checking for PNG... no
+configure: creating ./config.status
+config.status: creating pixman-1.pc
+config.status: creating pixman-1-uninstalled.pc
+config.status: creating Makefile
+config.status: creating pixman/Makefile
+config.status: creating pixman/pixman-version.h
+config.status: creating demos/Makefile
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making clean in test
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/test'
+rm -rf .libs _libs
+test -z "libutils.la" || rm -f libutils.la
+rm -f "./so_locations"
+ rm -f a1-trap-test.exe pdf-op-test.exe region-test.exe region-translate-test.exe combiner-test.exe fetch-test.exe rotate-test.exe oob-test.exe infinite-loop.exe trap-crasher.exe alpha-loop.exe scaling-crash-test.exe scaling-helpers-test.exe gradient-crash-test.exe region-contains-test.exe alphamap.exe stress-test.exe composite-traps-test.exe blitters-test.exe glyph-test.exe scaling-test.exe affine-test.exe composite.exe lowlevel-blt-bench.exe
+ rm -f a1-trap-test pdf-op-test region-test region-translate-test combiner-test fetch-test rotate-test oob-test infinite-loop trap-crasher alpha-loop scaling-crash-test scaling-helpers-test gradient-crash-test region-contains-test alphamap stress-test composite-traps-test blitters-test glyph-test scaling-test affine-test composite lowlevel-blt-bench
+rm -f *.o
+rm -f *.lo
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/test'
+Making clean in demos
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+Making clean in pixman
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+test -z "libpixman-1.la" || rm -f libpixman-1.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+test -z "libpixman-mmx.la  libpixman-sse2.la     " || rm -f libpixman-mmx.la  libpixman-sse2.la     
+rm -f "./so_locations"
+rm -f "./so_locations"
+rm -f *.o
+rm -f *.lo
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+Making clean in .
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman'
+make  all-recursive
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman'
+Making all in pixman
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman.lo -MD -MP -MF .deps/pixman.Tpo -c -o pixman.lo pixman.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman.lo -MD -MP -MF .deps/pixman.Tpo -c pixman.c  -DDLL_EXPORT -DPIC -o .libs/pixman.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman.lo -MD -MP -MF .deps/pixman.Tpo -c pixman.c -o pixman.o >/dev/null 2>&1
+mv -f .deps/pixman.Tpo .deps/pixman.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access.lo -MD -MP -MF .deps/pixman-access.Tpo -c -o pixman-access.lo pixman-access.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access.lo -MD -MP -MF .deps/pixman-access.Tpo -c pixman-access.c  -DDLL_EXPORT -DPIC -o .libs/pixman-access.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access.lo -MD -MP -MF .deps/pixman-access.Tpo -c pixman-access.c -o pixman-access.o >/dev/null 2>&1
+mv -f .deps/pixman-access.Tpo .deps/pixman-access.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access-accessors.lo -MD -MP -MF .deps/pixman-access-accessors.Tpo -c -o pixman-access-accessors.lo pixman-access-accessors.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access-accessors.lo -MD -MP -MF .deps/pixman-access-accessors.Tpo -c pixman-access-accessors.c  -DDLL_EXPORT -DPIC -o .libs/pixman-access-accessors.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-access-accessors.lo -MD -MP -MF .deps/pixman-access-accessors.Tpo -c pixman-access-accessors.c -o pixman-access-accessors.o >/dev/null 2>&1
+mv -f .deps/pixman-access-accessors.Tpo .deps/pixman-access-accessors.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-bits-image.lo -MD -MP -MF .deps/pixman-bits-image.Tpo -c -o pixman-bits-image.lo pixman-bits-image.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-bits-image.lo -MD -MP -MF .deps/pixman-bits-image.Tpo -c pixman-bits-image.c  -DDLL_EXPORT -DPIC -o .libs/pixman-bits-image.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-bits-image.lo -MD -MP -MF .deps/pixman-bits-image.Tpo -c pixman-bits-image.c -o pixman-bits-image.o >/dev/null 2>&1
+mv -f .deps/pixman-bits-image.Tpo .deps/pixman-bits-image.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine32.lo -MD -MP -MF .deps/pixman-combine32.Tpo -c -o pixman-combine32.lo pixman-combine32.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine32.lo -MD -MP -MF .deps/pixman-combine32.Tpo -c pixman-combine32.c  -DDLL_EXPORT -DPIC -o .libs/pixman-combine32.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine32.lo -MD -MP -MF .deps/pixman-combine32.Tpo -c pixman-combine32.c -o pixman-combine32.o >/dev/null 2>&1
+mv -f .deps/pixman-combine32.Tpo .deps/pixman-combine32.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine-float.lo -MD -MP -MF .deps/pixman-combine-float.Tpo -c -o pixman-combine-float.lo pixman-combine-float.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine-float.lo -MD -MP -MF .deps/pixman-combine-float.Tpo -c pixman-combine-float.c  -DDLL_EXPORT -DPIC -o .libs/pixman-combine-float.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-combine-float.lo -MD -MP -MF .deps/pixman-combine-float.Tpo -c pixman-combine-float.c -o pixman-combine-float.o >/dev/null 2>&1
+mv -f .deps/pixman-combine-float.Tpo .deps/pixman-combine-float.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-conical-gradient.lo -MD -MP -MF .deps/pixman-conical-gradient.Tpo -c -o pixman-conical-gradient.lo pixman-conical-gradient.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-conical-gradient.lo -MD -MP -MF .deps/pixman-conical-gradient.Tpo -c pixman-conical-gradient.c  -DDLL_EXPORT -DPIC -o .libs/pixman-conical-gradient.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-conical-gradient.lo -MD -MP -MF .deps/pixman-conical-gradient.Tpo -c pixman-conical-gradient.c -o pixman-conical-gradient.o >/dev/null 2>&1
+mv -f .deps/pixman-conical-gradient.Tpo .deps/pixman-conical-gradient.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-x86.lo -MD -MP -MF .deps/pixman-x86.Tpo -c -o pixman-x86.lo pixman-x86.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-x86.lo -MD -MP -MF .deps/pixman-x86.Tpo -c pixman-x86.c  -DDLL_EXPORT -DPIC -o .libs/pixman-x86.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-x86.lo -MD -MP -MF .deps/pixman-x86.Tpo -c pixman-x86.c -o pixman-x86.o >/dev/null 2>&1
+mv -f .deps/pixman-x86.Tpo .deps/pixman-x86.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-mips.lo -MD -MP -MF .deps/pixman-mips.Tpo -c -o pixman-mips.lo pixman-mips.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-mips.lo -MD -MP -MF .deps/pixman-mips.Tpo -c pixman-mips.c  -DDLL_EXPORT -DPIC -o .libs/pixman-mips.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-mips.lo -MD -MP -MF .deps/pixman-mips.Tpo -c pixman-mips.c -o pixman-mips.o >/dev/null 2>&1
+mv -f .deps/pixman-mips.Tpo .deps/pixman-mips.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-arm.lo -MD -MP -MF .deps/pixman-arm.Tpo -c -o pixman-arm.lo pixman-arm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-arm.lo -MD -MP -MF .deps/pixman-arm.Tpo -c pixman-arm.c  -DDLL_EXPORT -DPIC -o .libs/pixman-arm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-arm.lo -MD -MP -MF .deps/pixman-arm.Tpo -c pixman-arm.c -o pixman-arm.o >/dev/null 2>&1
+mv -f .deps/pixman-arm.Tpo .deps/pixman-arm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-ppc.lo -MD -MP -MF .deps/pixman-ppc.Tpo -c -o pixman-ppc.lo pixman-ppc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-ppc.lo -MD -MP -MF .deps/pixman-ppc.Tpo -c pixman-ppc.c  -DDLL_EXPORT -DPIC -o .libs/pixman-ppc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-ppc.lo -MD -MP -MF .deps/pixman-ppc.Tpo -c pixman-ppc.c -o pixman-ppc.o >/dev/null 2>&1
+mv -f .deps/pixman-ppc.Tpo .deps/pixman-ppc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge.lo -MD -MP -MF .deps/pixman-edge.Tpo -c -o pixman-edge.lo pixman-edge.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge.lo -MD -MP -MF .deps/pixman-edge.Tpo -c pixman-edge.c  -DDLL_EXPORT -DPIC -o .libs/pixman-edge.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge.lo -MD -MP -MF .deps/pixman-edge.Tpo -c pixman-edge.c -o pixman-edge.o >/dev/null 2>&1
+mv -f .deps/pixman-edge.Tpo .deps/pixman-edge.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge-accessors.lo -MD -MP -MF .deps/pixman-edge-accessors.Tpo -c -o pixman-edge-accessors.lo pixman-edge-accessors.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge-accessors.lo -MD -MP -MF .deps/pixman-edge-accessors.Tpo -c pixman-edge-accessors.c  -DDLL_EXPORT -DPIC -o .libs/pixman-edge-accessors.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-edge-accessors.lo -MD -MP -MF .deps/pixman-edge-accessors.Tpo -c pixman-edge-accessors.c -o pixman-edge-accessors.o >/dev/null 2>&1
+mv -f .deps/pixman-edge-accessors.Tpo .deps/pixman-edge-accessors.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-fast-path.lo -MD -MP -MF .deps/pixman-fast-path.Tpo -c -o pixman-fast-path.lo pixman-fast-path.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-fast-path.lo -MD -MP -MF .deps/pixman-fast-path.Tpo -c pixman-fast-path.c  -DDLL_EXPORT -DPIC -o .libs/pixman-fast-path.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-fast-path.lo -MD -MP -MF .deps/pixman-fast-path.Tpo -c pixman-fast-path.c -o pixman-fast-path.o >/dev/null 2>&1
+mv -f .deps/pixman-fast-path.Tpo .deps/pixman-fast-path.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-glyph.lo -MD -MP -MF .deps/pixman-glyph.Tpo -c -o pixman-glyph.lo pixman-glyph.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-glyph.lo -MD -MP -MF .deps/pixman-glyph.Tpo -c pixman-glyph.c  -DDLL_EXPORT -DPIC -o .libs/pixman-glyph.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-glyph.lo -MD -MP -MF .deps/pixman-glyph.Tpo -c pixman-glyph.c -o pixman-glyph.o >/dev/null 2>&1
+mv -f .deps/pixman-glyph.Tpo .deps/pixman-glyph.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-general.lo -MD -MP -MF .deps/pixman-general.Tpo -c -o pixman-general.lo pixman-general.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-general.lo -MD -MP -MF .deps/pixman-general.Tpo -c pixman-general.c  -DDLL_EXPORT -DPIC -o .libs/pixman-general.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-general.lo -MD -MP -MF .deps/pixman-general.Tpo -c pixman-general.c -o pixman-general.o >/dev/null 2>&1
+mv -f .deps/pixman-general.Tpo .deps/pixman-general.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-gradient-walker.lo -MD -MP -MF .deps/pixman-gradient-walker.Tpo -c -o pixman-gradient-walker.lo pixman-gradient-walker.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-gradient-walker.lo -MD -MP -MF .deps/pixman-gradient-walker.Tpo -c pixman-gradient-walker.c  -DDLL_EXPORT -DPIC -o .libs/pixman-gradient-walker.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-gradient-walker.lo -MD -MP -MF .deps/pixman-gradient-walker.Tpo -c pixman-gradient-walker.c -o pixman-gradient-walker.o >/dev/null 2>&1
+mv -f .deps/pixman-gradient-walker.Tpo .deps/pixman-gradient-walker.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-image.lo -MD -MP -MF .deps/pixman-image.Tpo -c -o pixman-image.lo pixman-image.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-image.lo -MD -MP -MF .deps/pixman-image.Tpo -c pixman-image.c  -DDLL_EXPORT -DPIC -o .libs/pixman-image.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-image.lo -MD -MP -MF .deps/pixman-image.Tpo -c pixman-image.c -o pixman-image.o >/dev/null 2>&1
+mv -f .deps/pixman-image.Tpo .deps/pixman-image.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-implementation.lo -MD -MP -MF .deps/pixman-implementation.Tpo -c -o pixman-implementation.lo pixman-implementation.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-implementation.lo -MD -MP -MF .deps/pixman-implementation.Tpo -c pixman-implementation.c  -DDLL_EXPORT -DPIC -o .libs/pixman-implementation.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-implementation.lo -MD -MP -MF .deps/pixman-implementation.Tpo -c pixman-implementation.c -o pixman-implementation.o >/dev/null 2>&1
+mv -f .deps/pixman-implementation.Tpo .deps/pixman-implementation.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-linear-gradient.lo -MD -MP -MF .deps/pixman-linear-gradient.Tpo -c -o pixman-linear-gradient.lo pixman-linear-gradient.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-linear-gradient.lo -MD -MP -MF .deps/pixman-linear-gradient.Tpo -c pixman-linear-gradient.c  -DDLL_EXPORT -DPIC -o .libs/pixman-linear-gradient.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-linear-gradient.lo -MD -MP -MF .deps/pixman-linear-gradient.Tpo -c pixman-linear-gradient.c -o pixman-linear-gradient.o >/dev/null 2>&1
+mv -f .deps/pixman-linear-gradient.Tpo .deps/pixman-linear-gradient.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-matrix.lo -MD -MP -MF .deps/pixman-matrix.Tpo -c -o pixman-matrix.lo pixman-matrix.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-matrix.lo -MD -MP -MF .deps/pixman-matrix.Tpo -c pixman-matrix.c  -DDLL_EXPORT -DPIC -o .libs/pixman-matrix.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-matrix.lo -MD -MP -MF .deps/pixman-matrix.Tpo -c pixman-matrix.c -o pixman-matrix.o >/dev/null 2>&1
+mv -f .deps/pixman-matrix.Tpo .deps/pixman-matrix.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-noop.lo -MD -MP -MF .deps/pixman-noop.Tpo -c -o pixman-noop.lo pixman-noop.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-noop.lo -MD -MP -MF .deps/pixman-noop.Tpo -c pixman-noop.c  -DDLL_EXPORT -DPIC -o .libs/pixman-noop.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-noop.lo -MD -MP -MF .deps/pixman-noop.Tpo -c pixman-noop.c -o pixman-noop.o >/dev/null 2>&1
+mv -f .deps/pixman-noop.Tpo .deps/pixman-noop.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-radial-gradient.lo -MD -MP -MF .deps/pixman-radial-gradient.Tpo -c -o pixman-radial-gradient.lo pixman-radial-gradient.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-radial-gradient.lo -MD -MP -MF .deps/pixman-radial-gradient.Tpo -c pixman-radial-gradient.c  -DDLL_EXPORT -DPIC -o .libs/pixman-radial-gradient.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-radial-gradient.lo -MD -MP -MF .deps/pixman-radial-gradient.Tpo -c pixman-radial-gradient.c -o pixman-radial-gradient.o >/dev/null 2>&1
+mv -f .deps/pixman-radial-gradient.Tpo .deps/pixman-radial-gradient.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region16.lo -MD -MP -MF .deps/pixman-region16.Tpo -c -o pixman-region16.lo pixman-region16.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region16.lo -MD -MP -MF .deps/pixman-region16.Tpo -c pixman-region16.c  -DDLL_EXPORT -DPIC -o .libs/pixman-region16.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region16.lo -MD -MP -MF .deps/pixman-region16.Tpo -c pixman-region16.c -o pixman-region16.o >/dev/null 2>&1
+mv -f .deps/pixman-region16.Tpo .deps/pixman-region16.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region32.lo -MD -MP -MF .deps/pixman-region32.Tpo -c -o pixman-region32.lo pixman-region32.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region32.lo -MD -MP -MF .deps/pixman-region32.Tpo -c pixman-region32.c  -DDLL_EXPORT -DPIC -o .libs/pixman-region32.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-region32.lo -MD -MP -MF .deps/pixman-region32.Tpo -c pixman-region32.c -o pixman-region32.o >/dev/null 2>&1
+mv -f .deps/pixman-region32.Tpo .deps/pixman-region32.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-solid-fill.lo -MD -MP -MF .deps/pixman-solid-fill.Tpo -c -o pixman-solid-fill.lo pixman-solid-fill.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-solid-fill.lo -MD -MP -MF .deps/pixman-solid-fill.Tpo -c pixman-solid-fill.c  -DDLL_EXPORT -DPIC -o .libs/pixman-solid-fill.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-solid-fill.lo -MD -MP -MF .deps/pixman-solid-fill.Tpo -c pixman-solid-fill.c -o pixman-solid-fill.o >/dev/null 2>&1
+mv -f .deps/pixman-solid-fill.Tpo .deps/pixman-solid-fill.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-timer.lo -MD -MP -MF .deps/pixman-timer.Tpo -c -o pixman-timer.lo pixman-timer.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-timer.lo -MD -MP -MF .deps/pixman-timer.Tpo -c pixman-timer.c  -DDLL_EXPORT -DPIC -o .libs/pixman-timer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-timer.lo -MD -MP -MF .deps/pixman-timer.Tpo -c pixman-timer.c -o pixman-timer.o >/dev/null 2>&1
+mv -f .deps/pixman-timer.Tpo .deps/pixman-timer.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-trap.lo -MD -MP -MF .deps/pixman-trap.Tpo -c -o pixman-trap.lo pixman-trap.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-trap.lo -MD -MP -MF .deps/pixman-trap.Tpo -c pixman-trap.c  -DDLL_EXPORT -DPIC -o .libs/pixman-trap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-trap.lo -MD -MP -MF .deps/pixman-trap.Tpo -c pixman-trap.c -o pixman-trap.o >/dev/null 2>&1
+mv -f .deps/pixman-trap.Tpo .deps/pixman-trap.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-utils.lo -MD -MP -MF .deps/pixman-utils.Tpo -c -o pixman-utils.lo pixman-utils.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-utils.lo -MD -MP -MF .deps/pixman-utils.Tpo -c pixman-utils.c  -DDLL_EXPORT -DPIC -o .libs/pixman-utils.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pixman-utils.lo -MD -MP -MF .deps/pixman-utils.Tpo -c pixman-utils.c -o pixman-utils.o >/dev/null 2>&1
+mv -f .deps/pixman-utils.Tpo .deps/pixman-utils.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -mmmx -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_mmx_la-pixman-mmx.lo -MD -MP -MF .deps/libpixman_mmx_la-pixman-mmx.Tpo -c -o libpixman_mmx_la-pixman-mmx.lo `test -f 'pixman-mmx.c' || echo './'`pixman-mmx.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -mmmx -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_mmx_la-pixman-mmx.lo -MD -MP -MF .deps/libpixman_mmx_la-pixman-mmx.Tpo -c pixman-mmx.c  -DDLL_EXPORT -DPIC -o .libs/libpixman_mmx_la-pixman-mmx.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -mmmx -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_mmx_la-pixman-mmx.lo -MD -MP -MF .deps/libpixman_mmx_la-pixman-mmx.Tpo -c pixman-mmx.c -o libpixman_mmx_la-pixman-mmx.o >/dev/null 2>&1
+mv -f .deps/libpixman_mmx_la-pixman-mmx.Tpo .deps/libpixman_mmx_la-pixman-mmx.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -mmmx -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o libpixman-mmx.la  libpixman_mmx_la-pixman-mmx.lo  
+libtool: link: ar cru .libs/libpixman-mmx.a .libs/libpixman_mmx_la-pixman-mmx.o 
+libtool: link: ranlib .libs/libpixman-mmx.a
+libtool: link: ( cd ".libs" && rm -f "libpixman-mmx.la" && cp -p "../libpixman-mmx.la" "libpixman-mmx.la" )
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -msse2 -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_sse2_la-pixman-sse2.lo -MD -MP -MF .deps/libpixman_sse2_la-pixman-sse2.Tpo -c -o libpixman_sse2_la-pixman-sse2.lo `test -f 'pixman-sse2.c' || echo './'`pixman-sse2.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -msse2 -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_sse2_la-pixman-sse2.lo -MD -MP -MF .deps/libpixman_sse2_la-pixman-sse2.Tpo -c pixman-sse2.c  -DDLL_EXPORT -DPIC -o .libs/libpixman_sse2_la-pixman-sse2.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -msse2 -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT libpixman_sse2_la-pixman-sse2.lo -MD -MP -MF .deps/libpixman_sse2_la-pixman-sse2.Tpo -c pixman-sse2.c -o libpixman_sse2_la-pixman-sse2.o >/dev/null 2>&1
+mv -f .deps/libpixman_sse2_la-pixman-sse2.Tpo .deps/libpixman_sse2_la-pixman-sse2.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -msse2 -Winline -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o libpixman-sse2.la  libpixman_sse2_la-pixman-sse2.lo  
+libtool: link: ar cru .libs/libpixman-sse2.a .libs/libpixman_sse2_la-pixman-sse2.o 
+libtool: link: ranlib .libs/libpixman-sse2.a
+libtool: link: ( cd ".libs" && rm -f "libpixman-sse2.la" && cp -p "../libpixman-sse2.la" "libpixman-sse2.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -version-info 28:2:28 -no-undefined     -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o libpixman-1.la -rpath /c/roxlu_libs/scripts/mingw/pixman/../build/lib pixman.lo pixman-access.lo pixman-access-accessors.lo pixman-bits-image.lo pixman-combine32.lo pixman-combine-float.lo pixman-conical-gradient.lo pixman-x86.lo pixman-mips.lo pixman-arm.lo pixman-ppc.lo pixman-edge.lo pixman-edge-accessors.lo pixman-fast-path.lo pixman-glyph.lo pixman-general.lo pixman-gradient-walker.lo pixman-image.lo pixman-implementation.lo pixman-linear-gradient.lo pixman-matrix.lo pixman-noop.lo pixman-radial-gradient.lo pixman-region16.lo pixman-region32.lo pixman-solid-fill.lo pixman-timer.lo pixman-trap.lo pixman-utils.lo  -lm libpixman-mmx.la  libpixman-sse2.la      
+libtool: link: gcc -shared  .libs/pixman.o .libs/pixman-access.o .libs/pixman-access-accessors.o .libs/pixman-bits-image.o .libs/pixman-combine32.o .libs/pixman-combine-float.o .libs/pixman-conical-gradient.o .libs/pixman-x86.o .libs/pixman-mips.o .libs/pixman-arm.o .libs/pixman-ppc.o .libs/pixman-edge.o .libs/pixman-edge-accessors.o .libs/pixman-fast-path.o .libs/pixman-glyph.o .libs/pixman-general.o .libs/pixman-gradient-walker.o .libs/pixman-image.o .libs/pixman-implementation.o .libs/pixman-linear-gradient.o .libs/pixman-matrix.o .libs/pixman-noop.o .libs/pixman-radial-gradient.o .libs/pixman-region16.o .libs/pixman-region32.o .libs/pixman-solid-fill.o .libs/pixman-timer.o .libs/pixman-trap.o .libs/pixman-utils.o  -Wl,--whole-archive ./.libs/libpixman-mmx.a ./.libs/libpixman-sse2.a -Wl,--no-whole-archive  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/    -o .libs/libpixman-1-0.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libpixman-1.dll.a
+Creating library file: .libs/libpixman-1.dll.a
+libtool: link: (cd .libs/libpixman-1.lax/libpixman-mmx.a && ar x "/c/roxlu_libs/scripts/sources/pixman/pixman/./.libs/libpixman-mmx.a")
+libtool: link: (cd .libs/libpixman-1.lax/libpixman-sse2.a && ar x "/c/roxlu_libs/scripts/sources/pixman/pixman/./.libs/libpixman-sse2.a")
+libtool: link: ar cru .libs/libpixman-1.a  pixman.o pixman-access.o pixman-access-accessors.o pixman-bits-image.o pixman-combine32.o pixman-combine-float.o pixman-conical-gradient.o pixman-x86.o pixman-mips.o pixman-arm.o pixman-ppc.o pixman-edge.o pixman-edge-accessors.o pixman-fast-path.o pixman-glyph.o pixman-general.o pixman-gradient-walker.o pixman-image.o pixman-implementation.o pixman-linear-gradient.o pixman-matrix.o pixman-noop.o pixman-radial-gradient.o pixman-region16.o pixman-region32.o pixman-solid-fill.o pixman-timer.o pixman-trap.o pixman-utils.o  .libs/libpixman-1.lax/libpixman-mmx.a/libpixman_mmx_la-pixman-mmx.o  .libs/libpixman-1.lax/libpixman-sse2.a/libpixman_sse2_la-pixman-sse2.o 
+libtool: link: ranlib .libs/libpixman-1.a
+libtool: link: rm -fr .libs/libpixman-1.lax
+libtool: link: ( cd ".libs" && rm -f "libpixman-1.la" && cp -p "../libpixman-1.la" "libpixman-1.la" )
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+Making all in demos
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+Making all in test
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/test'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c -o utils.lo utils.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c utils.c  -DDLL_EXPORT -DPIC -o .libs/utils.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c utils.c -o utils.o >/dev/null 2>&1
+mv -f .deps/utils.Tpo .deps/utils.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o libutils.la  utils.lo   
+libtool: link: ar cru .libs/libutils.a .libs/utils.o 
+libtool: link: ranlib .libs/libutils.a
+libtool: link: ( cd ".libs" && rm -f "libutils.la" && cp -p "../libutils.la" "libutils.la" )
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT a1-trap-test.o -MD -MP -MF .deps/a1-trap-test.Tpo -c -o a1-trap-test.o a1-trap-test.c
+mv -f .deps/a1-trap-test.Tpo .deps/a1-trap-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o a1-trap-test.exe a1-trap-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/a1-trap-test.exe a1-trap-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT pdf-op-test.o -MD -MP -MF .deps/pdf-op-test.Tpo -c -o pdf-op-test.o pdf-op-test.c
+mv -f .deps/pdf-op-test.Tpo .deps/pdf-op-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o pdf-op-test.exe pdf-op-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/pdf-op-test.exe pdf-op-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT region-test.o -MD -MP -MF .deps/region-test.Tpo -c -o region-test.o region-test.c
+mv -f .deps/region-test.Tpo .deps/region-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o region-test.exe region-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/region-test.exe region-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT region-translate-test.o -MD -MP -MF .deps/region-translate-test.Tpo -c -o region-translate-test.o region-translate-test.c
+mv -f .deps/region-translate-test.Tpo .deps/region-translate-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o region-translate-test.exe region-translate-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/region-translate-test.exe region-translate-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT combiner-test.o -MD -MP -MF .deps/combiner-test.Tpo -c -o combiner-test.o combiner-test.c
+mv -f .deps/combiner-test.Tpo .deps/combiner-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o combiner-test.exe combiner-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/combiner-test.exe combiner-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT fetch-test.o -MD -MP -MF .deps/fetch-test.Tpo -c -o fetch-test.o fetch-test.c
+mv -f .deps/fetch-test.Tpo .deps/fetch-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o fetch-test.exe fetch-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/fetch-test.exe fetch-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT rotate-test.o -MD -MP -MF .deps/rotate-test.Tpo -c -o rotate-test.o rotate-test.c
+mv -f .deps/rotate-test.Tpo .deps/rotate-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o rotate-test.exe rotate-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/rotate-test.exe rotate-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT oob-test.o -MD -MP -MF .deps/oob-test.Tpo -c -o oob-test.o oob-test.c
+mv -f .deps/oob-test.Tpo .deps/oob-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o oob-test.exe oob-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/oob-test.exe oob-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT infinite-loop.o -MD -MP -MF .deps/infinite-loop.Tpo -c -o infinite-loop.o infinite-loop.c
+mv -f .deps/infinite-loop.Tpo .deps/infinite-loop.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o infinite-loop.exe infinite-loop.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/infinite-loop.exe infinite-loop.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT trap-crasher.o -MD -MP -MF .deps/trap-crasher.Tpo -c -o trap-crasher.o trap-crasher.c
+mv -f .deps/trap-crasher.Tpo .deps/trap-crasher.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o trap-crasher.exe trap-crasher.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/trap-crasher.exe trap-crasher.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT alpha-loop.o -MD -MP -MF .deps/alpha-loop.Tpo -c -o alpha-loop.o alpha-loop.c
+mv -f .deps/alpha-loop.Tpo .deps/alpha-loop.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o alpha-loop.exe alpha-loop.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/alpha-loop.exe alpha-loop.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT scaling-crash-test.o -MD -MP -MF .deps/scaling-crash-test.Tpo -c -o scaling-crash-test.o scaling-crash-test.c
+mv -f .deps/scaling-crash-test.Tpo .deps/scaling-crash-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o scaling-crash-test.exe scaling-crash-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/scaling-crash-test.exe scaling-crash-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT scaling-helpers-test.o -MD -MP -MF .deps/scaling-helpers-test.Tpo -c -o scaling-helpers-test.o scaling-helpers-test.c
+mv -f .deps/scaling-helpers-test.Tpo .deps/scaling-helpers-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o scaling-helpers-test.exe scaling-helpers-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/scaling-helpers-test.exe scaling-helpers-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT gradient-crash-test.o -MD -MP -MF .deps/gradient-crash-test.Tpo -c -o gradient-crash-test.o gradient-crash-test.c
+mv -f .deps/gradient-crash-test.Tpo .deps/gradient-crash-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o gradient-crash-test.exe gradient-crash-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/gradient-crash-test.exe gradient-crash-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT region-contains-test.o -MD -MP -MF .deps/region-contains-test.Tpo -c -o region-contains-test.o region-contains-test.c
+mv -f .deps/region-contains-test.Tpo .deps/region-contains-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o region-contains-test.exe region-contains-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/region-contains-test.exe region-contains-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT alphamap.o -MD -MP -MF .deps/alphamap.Tpo -c -o alphamap.o alphamap.c
+mv -f .deps/alphamap.Tpo .deps/alphamap.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o alphamap.exe alphamap.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/alphamap.exe alphamap.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT stress-test.o -MD -MP -MF .deps/stress-test.Tpo -c -o stress-test.o stress-test.c
+mv -f .deps/stress-test.Tpo .deps/stress-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o stress-test.exe stress-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/stress-test.exe stress-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT composite-traps-test.o -MD -MP -MF .deps/composite-traps-test.Tpo -c -o composite-traps-test.o composite-traps-test.c
+mv -f .deps/composite-traps-test.Tpo .deps/composite-traps-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o composite-traps-test.exe composite-traps-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/composite-traps-test.exe composite-traps-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT blitters-test.o -MD -MP -MF .deps/blitters-test.Tpo -c -o blitters-test.o blitters-test.c
+mv -f .deps/blitters-test.Tpo .deps/blitters-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o blitters-test.exe blitters-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/blitters-test.exe blitters-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT glyph-test.o -MD -MP -MF .deps/glyph-test.Tpo -c -o glyph-test.o glyph-test.c
+mv -f .deps/glyph-test.Tpo .deps/glyph-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o glyph-test.exe glyph-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/glyph-test.exe glyph-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT scaling-test.o -MD -MP -MF .deps/scaling-test.Tpo -c -o scaling-test.o scaling-test.c
+mv -f .deps/scaling-test.Tpo .deps/scaling-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o scaling-test.exe scaling-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/scaling-test.exe scaling-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT affine-test.o -MD -MP -MF .deps/affine-test.Tpo -c -o affine-test.o affine-test.c
+mv -f .deps/affine-test.Tpo .deps/affine-test.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o affine-test.exe affine-test.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/affine-test.exe affine-test.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT composite.o -MD -MP -MF .deps/composite.Tpo -c -o composite.o composite.c
+mv -f .deps/composite.Tpo .deps/composite.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o composite.exe composite.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/composite.exe composite.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+gcc -DHAVE_CONFIG_H -I. -I.. -I../pixman -I../pixman   -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -MT lowlevel-blt-bench.o -MD -MP -MF .deps/lowlevel-blt-bench.Tpo -c -o lowlevel-blt-bench.o lowlevel-blt-bench.c
+mv -f .deps/lowlevel-blt-bench.Tpo .deps/lowlevel-blt-bench.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ -o lowlevel-blt-bench.exe lowlevel-blt-bench.o libutils.la ../pixman/libpixman-1.la -lm   
+libtool: link: gcc -fopenmp -I//c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//include/ -Wall -fno-strict-aliasing -fopenmp -o .libs/lowlevel-blt-bench.exe lowlevel-blt-bench.o  -L/c/roxlu_libs/scripts/mingw/pixman/../../win32/build/32/md//lib/ ./.libs/libutils.a ../pixman/.libs/libpixman-1.dll.a -L/c/roxlu_libs/scripts/mingw/pixman/../build/lib
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/test'
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman'
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman'
+Making install in pixman
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+test -z "/c/roxlu_libs/scripts/mingw/pixman/../build/lib" || /bin/mkdir -p "/c/roxlu_libs/scripts/mingw/pixman/../build/lib"
+ /bin/sh ../libtool   --mode=install /bin/install -c   libpixman-1.la '/c/roxlu_libs/scripts/mingw/pixman/../build/lib'
+libtool: install: /bin/install -c .libs/libpixman-1.dll.a /c/roxlu_libs/scripts/mingw/pixman/../build/lib/libpixman-1.dll.a
+libtool: install: base_file=`basename libpixman-1.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'libpixman-1.la'i; echo libpixman-1-0.dll'`
+libtool: install:  dldir=/c/roxlu_libs/scripts/mingw/pixman/../build/lib/`dirname ../bin/libpixman-1-0.dll`
+libtool: install:  test -d /c/roxlu_libs/scripts/mingw/pixman/../build/lib/../bin || mkdir -p /c/roxlu_libs/scripts/mingw/pixman/../build/lib/../bin
+libtool: install:  /bin/install -c .libs/libpixman-1-0.dll /c/roxlu_libs/scripts/mingw/pixman/../build/lib/../bin/libpixman-1-0.dll
+libtool: install:  chmod a+x /c/roxlu_libs/scripts/mingw/pixman/../build/lib/../bin/libpixman-1-0.dll
+libtool: install:  if test -n '' && test -n 'strip --strip-unneeded'; then eval 'strip --strip-unneeded /c/roxlu_libs/scripts/mingw/pixman/../build/lib/../bin/libpixman-1-0.dll' || exit 0; fi
+libtool: install: /bin/install -c .libs/libpixman-1.lai /c/roxlu_libs/scripts/mingw/pixman/../build/lib/libpixman-1.la
+libtool: install: /bin/install -c .libs/libpixman-1.a /c/roxlu_libs/scripts/mingw/pixman/../build/lib/libpixman-1.a
+libtool: install: chmod 644 /c/roxlu_libs/scripts/mingw/pixman/../build/lib/libpixman-1.a
+libtool: install: ranlib /c/roxlu_libs/scripts/mingw/pixman/../build/lib/libpixman-1.a
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /c/roxlu_libs/scripts/mingw/pixman/../build/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/c/roxlu_libs/scripts/mingw/pixman/../build/include/pixman-1" || /bin/mkdir -p "/c/roxlu_libs/scripts/mingw/pixman/../build/include/pixman-1"
+ /bin/install -c -m 644 pixman.h pixman-version.h '/c/roxlu_libs/scripts/mingw/pixman/../build/include/pixman-1'
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/pixman'
+Making install in demos
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/demos'
+Making install in test
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/test'
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/test'
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman/test'
+make[1]: Entering directory `/c/roxlu_libs/scripts/sources/pixman'
+make[2]: Entering directory `/c/roxlu_libs/scripts/sources/pixman'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/c/roxlu_libs/scripts/mingw/pixman/../build/lib/pkgconfig" || /bin/mkdir -p "/c/roxlu_libs/scripts/mingw/pixman/../build/lib/pkgconfig"
+ /bin/install -c -m 644 pixman-1.pc '/c/roxlu_libs/scripts/mingw/pixman/../build/lib/pkgconfig'
+make[2]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman'
+make[1]: Leaving directory `/c/roxlu_libs/scripts/sources/pixman'

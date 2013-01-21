@@ -16,7 +16,7 @@ Compile the libraries in this order, and using /MD runtime
 - libffi         
 - libpng         
 - fontconfig     - used the mingw script to build fontconfig 
-- pixman         - used the mingw script to build pixman
+- pixman     
 - glib
 - cairo
 - pango
@@ -27,6 +27,15 @@ Compile the libraries in this order, and using /MD runtime
 - libspeex
 - libvpx         - used the mingw script to build libvpx
 - libav          - used the mingw script to build libav
+- curl
+- speex
+- x264           - used the mingw script to build libav
+- libav          - used the mingw script to build libav
+- libvpx         - used the mingw script to build libav <=== todo not finished
+- glfw
+- glew
+- portaudio
+- libuv
 
 TODO
 ----
