@@ -142,3 +142,4 @@ download libxml "ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz" "libxml2-2.8.0.
 download libshout "http://downloads.xiph.org/releases/libshout/libshout-2.3.1.tar.gz" "libshout-2.3.1.tar.gz" "libshout-2.3.1" 0
 download winiconv "https://github.com/downloads/hexchat/gtk-win32/win-iconv-0.0.4.7z" "win-iconv-0.0.4.7z" "win-iconv-0.0.4" 3
 download m4 "http://ftp.gnu.org/gnu/m4/m4-1.4.16.tar.gz" "m4-1.4.16.tar.gz" "m4-1.4.16" 0
+download glew "https://sourceforge.net/projects/glew/files/glew/1.9.0/glew-1.9.0.tgz/download" "glew-1.9.0.tgz" "glew-1.9.0" 0

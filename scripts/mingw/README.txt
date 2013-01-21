@@ -7,3 +7,7 @@ we use MingW to compile static libraries.
 - autoconf <-- error when building; but it copies some files..
 - fontconfig 
 - pixman 
+- libvpx
+- libav
+
+
