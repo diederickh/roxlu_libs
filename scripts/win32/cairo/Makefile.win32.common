@@ -20,15 +20,15 @@ ifeq ($(CFG),debug)
 CFG_CFLAGS := -MDd -Od -Zi -I/include/ -VERBOSE
 CFG_LDFLAGS := -DEBUG -Llib/
 else
-CFG_CFLAGS := -MD -O2  -I..\..\win32\build\32\md\include
+CFG_CFLAGS := -MD -O2  -I/c/roxlu_libs/scripts/win32/build/32/md/include
 CFG_LDFLAGS := -L$(BUILD_DIR)\lib
 endif
 
 #PIXMAN_CFLAGS := -I$(top_srcdir)/../pixman/pixman
 #PIXMAN_LIBS := $(top_builddir)/../pixman/pixman/$(CFG)/libpixman-1.dll.a
-PIXMAN_CFLAGS := -I.\..\..\win32\build\32\md\include -I.\..\..\win32\build\32\md\include\pixman-1\
+PIXMAN_CFLAGS := -I.\..\..\win32\build\32\md\include -I/c/roxlu_libs/scripts/win32/build/32/md/include/pixman-1\
 #PIXMAN_LIBS := $(BUILD_DIR)/lib/libpixman-1.a
-PIXMAN_LIBS := /c/roxlu_libs/scripts/win32/build/32/md/lib/libpixman-1.dll.a
+PIXMAN_LIBS := /c/roxlu_libs/scripts/win32/build/32/md/lib/pixman-1.lib
 
 CAIRO_LIBS =  gdi32.lib msimg32.lib user32.lib
 ifeq ($(CAIRO_HAS_PNG_FUNCTIONS),1)
