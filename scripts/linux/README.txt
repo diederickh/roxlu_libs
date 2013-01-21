@@ -1,9 +1,43 @@
 You should compile the libraries in this order:
 
-- zlib
-- libxml
-- libuv
-- libpng
-- libjpeg
-- libtiff
-- libssl
+ - zlib
+ - libxml
+ - libuv
+ - libpng
+ - libjpeg
+ - libtiff
+ - libssl      - I had to run this a couple of times; also just ran "./config && make && make install"
+ - liblamemp3
+ - yasm
+ - pcre
+ - curl
+ - jansson
+ - libvpx
+ - x264
+ - libyuv
+ - portaudio
+ - libffi
+ - iconv
+ - m4
+ - autoconf
+ - automake
+ - libtool
+ - gettext
+ - glib
+ - pkg-config
+ - pixman
+
+ - freetype
+ - fontconfig
+ - poppler
+ - harfbuzz
+ - cairo
+ - pango
+ - ogg
+ - vorbis
+ - speex
+ - theora
+ - icecast
+ - libshout
+ - libav
+ - glfw

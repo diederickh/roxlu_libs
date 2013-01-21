@@ -1,6 +1,6 @@
 #!/bin/bash
-# Compiling libssl
-# -----------------
+# Compiling autoconf
+
 d=${PWD}
 bd=${d}/../build
 sd=${d}/../../sources/
@@ -15,9 +15,13 @@ export LIBFFI_CFLAGS="-I${bd}/include/ -I${bd}/lib/libffi-3.0.11/include/"
 export PKG_CONFIG=${bd}/bin/pkg-config
 export PKG_CONFIG_PATH=${bd}/lib/pkgconfig
 
+cd ${sd}/autoconf
+./configure --prefix=${bd} \
+    --enable-static=yes \
+    --enable-shared=yes
 
-cd ${sd}/libssl
-./Configure --prefix=${bd} linux-x86_64
-make clean && make && make install
+make clean 
+make 
+make install
 
 

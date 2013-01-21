@@ -1,9 +1,11 @@
 #!/bin/bash
-# Compiling libssl
+# Compiling libffi
 # -----------------
+
 d=${PWD}
 bd=${d}/../build
 sd=${d}/../../sources/
+
 
 export CXXFLAGS="-fpic"
 export CFLAGS="-I${bd}/include/ -fpic"
@@ -15,9 +17,8 @@ export LIBFFI_CFLAGS="-I${bd}/include/ -I${bd}/lib/libffi-3.0.11/include/"
 export PKG_CONFIG=${bd}/bin/pkg-config
 export PKG_CONFIG_PATH=${bd}/lib/pkgconfig
 
-
-cd ${sd}/libssl
-./Configure --prefix=${bd} linux-x86_64
+cd ${sd}/libffi
+./configure --prefix=${bd} --enable-static=yes
 make clean && make && make install
 
 

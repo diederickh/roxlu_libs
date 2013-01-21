@@ -1,5 +1,5 @@
 #!/bin/bash
-# Compiling libssl
+# Compiling x264
 # -----------------
 d=${PWD}
 bd=${d}/../build
@@ -16,8 +16,13 @@ export PKG_CONFIG=${bd}/bin/pkg-config
 export PKG_CONFIG_PATH=${bd}/lib/pkgconfig
 
 
-cd ${sd}/libssl
-./Configure --prefix=${bd} linux-x86_64
-make clean && make && make install
+cd ${sd}/x264
+./configure --prefix=${bd} \
+    --enable-static \
+    --enable-shared
+
+make clean 
+make 
+make install
 
 

@@ -1,6 +1,6 @@
 #!/bin/bash
-# Compiling libssl
-# -----------------
+# Compiling glib
+
 d=${PWD}
 bd=${d}/../build
 sd=${d}/../../sources/
@@ -15,9 +15,16 @@ export LIBFFI_CFLAGS="-I${bd}/include/ -I${bd}/lib/libffi-3.0.11/include/"
 export PKG_CONFIG=${bd}/bin/pkg-config
 export PKG_CONFIG_PATH=${bd}/lib/pkgconfig
 
+cd ${sd}/glib
+./configure --prefix=${bd} \
+    --enable-static=yes \
+    --disable-selinux \
+    --disable-modular-tests \
+    --with-libiconv=gnu
 
-cd ${sd}/libssl
-./Configure --prefix=${bd} linux-x86_64
-make clean && make && make install
+make clean
+make V=1
+make install
+
 
 
