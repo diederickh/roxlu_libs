@@ -24,7 +24,7 @@
  * In the "Property manager"
    - Select glib > "glibprops" > right mouse "properties"
    - Common Properties > User Macros: 
-            GlibEtcInstallRoot: .\vs10\compiled\    <--- the "." must be added!
+            GlibEtcInstallRoot: .\vs10\compiled\    <--- the "." must be added!d
             GlibSeparateVS10DllSufix: change to "-2"
             
    - Common Properties > Linker > Input > Additional Dependencies: intl.lib ---> libintl.lib

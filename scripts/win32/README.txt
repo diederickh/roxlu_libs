@@ -6,14 +6,27 @@ Compiling roxlu_libs for Win32
 3) Download the xz utils and extract to: MingW\bin\
 
 
-Compile the libraries in this order:
----------------------------------------------
-- zlib           - need to fix the MT version
-- win-iconv      - need to fix the MT version
-- freetype       - need to fix the MT version
-- libxml         - need to fix the MT version
-- openssl        - need to fix the MT version
-- libffi         - need to fix the MT version
-- libpng         - " "
-- fontconfig     - use the mingw script to build a static fontconfig.a library
-- pixman         - use the mingw script to build a static pixman.a library
+Compile the libraries in this order, and using /MD runtime
+-----------------------------------------------------------
+- zlib           
+- winiconv       
+- freetype       
+- libxml2        
+- openssl        
+- libffi         
+- libpng         
+- fontconfig     - used the mingw script to build a static fontconfig.a library
+- pixman         - used the mingw script to build a static pixman.a library
+- glib
+- cairo
+- pango
+- libogg
+- libvorbis
+- theora
+- liblamemp3
+
+
+TODO
+----
+- compile cairo with freetype, see the build/*win32*features* 
+- compile pango with freetype

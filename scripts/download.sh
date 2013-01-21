@@ -133,7 +133,7 @@ download zlib "http://zlib.net/zlib-1.2.7.tar.gz" "zlib-1.2.7.tar.gz" "zlib-1.2.
 download poppler "http://poppler.freedesktop.org/poppler-0.22.0.tar.gz" "poppler-0.22.0.tar.gz" "poppler-0.22.0" 0
 download harfbuzz "http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12" 1
 download cairo "http://cairographics.org/releases/cairo-1.12.10.tar.xz" "cairo-1.12.10.tar.xz" "cairo-1.12.10" 2
-download pango "http://ftp.gnome.org/pub/GNOME/sources/pango/1.32/pango-1.32.6.tar.xz" "pango-1.32.6.tar.zx" "pango-1.32.6" 2
+download pango "http://ftp.gnome.org/pub/GNOME/sources/pango/1.32/pango-1.32.6.tar.xz" "pango-1.32.6.tar.xz" "pango-1.32.6" 2
 download libogg "http://downloads.xiph.org/releases/ogg/libogg-1.3.0.tar.gz" "libogg-1.3.0.tar.gz" "libogg-1.3.0" 0
 download libvorbis "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3.tar.gz" "libvorbis-1.3.3" 0
 download libspeex "http://downloads.xiph.org/releases/speex/speex-1.2rc1.tar.gz" "libspeex-1.2rc1.tar.gz" "speex-1.2rc1" 0
