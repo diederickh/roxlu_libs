@@ -15,8 +15,9 @@ sd=${d}/../../sources/
 export PATH=${bd}/bin:${PATH}
 
 cd ${sd}/portaudio
-./configure --prefix=${bd} --disable-mac-universal
+./configure --prefix=${bd} --disable-mac-universal --enable-cxx
 cp ${d}/Makefile ${sd}/portaudio/
+make clean
 make 
 make install
 
