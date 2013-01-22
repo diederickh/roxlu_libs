@@ -1,0 +1,44 @@
+You should compile the libraries in this order:
+
+ - zlib
+ - libxml
+ - libuv
+ - libpng
+ - libjpeg
+ - libtiff
+ - libssl      - I had to run this a couple of times; also just ran "./config && make && make install"
+ - liblamemp3
+ - yasm
+ - pcre
+ - curl
+ - jansson
+ - libvpx
+ - x264
+ - libyuv
+ - portaudio
+ - libffi
+ - iconv
+ - m4
+ - autoconf
+ - automake
+ - libtool
+ - gettext
+ - glib
+ - pkg-config
+ - pixman
+ - freetype
+ - fontconfig
+ - poppler
+ - harfbuzz
+ - cairo
+ - fontconfig <-- yes again (somehow the fontconfig.pc which is used while testing isn't copied  after compiling)
+ - pango
+ - ogg
+ - vorbis
+ - speex
+ - theora
+ - libxslt
+ - icecast <-- TODO
+ - libshout
+ - libav
+ - glfw

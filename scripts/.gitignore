@@ -2,3 +2,4 @@ sources/
 win32/build/
 mingw/build/
 mac/build/
+linux/build/
