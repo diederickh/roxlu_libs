@@ -44,6 +44,7 @@
  - poppler
  - harfbuzz
  - cairo
+ - fontconfig <-- yes again (the fontconfig.pc isn't copied somehow)
  - pango
  - ogg
  - vorbis

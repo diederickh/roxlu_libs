@@ -26,18 +26,19 @@ You should compile the libraries in this order:
  - glib
  - pkg-config
  - pixman
-
  - freetype
  - fontconfig
  - poppler
  - harfbuzz
  - cairo
+ - fontconfig <-- yes again (somehow the fontconfig.pc which is used while testing isn't copied  after compiling)
  - pango
  - ogg
  - vorbis
  - speex
  - theora
- - icecast
+ - libxslt
+ - icecast <-- TODO
  - libshout
  - libav
  - glfw
