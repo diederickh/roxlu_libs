@@ -1,2 +1,5 @@
 .AppleDouble
-scripts\linux\build
+scripts/linux/build/
+scripts/linux/packaged/
+scripts/win32/packaged/
+scripts/mac/packaged/
