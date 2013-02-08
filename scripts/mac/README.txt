@@ -29,7 +29,7 @@
  - libvpx
  - x264
  - libyuv
- - portaudio
+ - portaudio (we had to change the make file a little bit)
  - libffi
  - iconv
  - libtool
@@ -54,3 +54,15 @@
  - libshout
  - libav
  - glfw
+ - glew
+
+32bit done
+-----------
+vorbis
+speex
+theora
+iceccast
+libshout
+libav
+glfw
+glew

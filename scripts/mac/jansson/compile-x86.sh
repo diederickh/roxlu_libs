@@ -1,13 +1,12 @@
 #!/bin/sh
 # Compiling libjansson
-
+# -----------------
+# - i686-apple-darwin11-llvm-g++-4.2
+# - i686-apple-darwin11-llvm-gcc-4.2:
+#
 d=${PWD}
-bd=${d}/../build32
+bd=${d}/../build
 sd=${d}/../../sources/
-
-export CFLAGS="-m32 -arch i386" 
-export CPPFLAGS="${CFLAGS} -arch i386"
-export LDFLAGS="-arch i386"
 
 cd ${sd}/jansson
 ./configure --prefix=${bd} --enable-static=yes

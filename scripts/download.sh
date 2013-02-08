@@ -13,7 +13,8 @@ if [ ! -d ${sd}/libuv ] ; then
     mkdir ${sd}/libuv
     cd ${sd}/libuv
     git clone https://github.com/joyent/libuv.git .
-    git reset --hard 92fb84b751e18f032c02609467f44bfe927b80c5
+#    git reset --hard 92fb84b751e18f032c02609467f44bfe927b80c5
+    git reset --hard 8311390f13177f3086ecdac875115d2d4cc2688b
 fi
 
 #lib vpx

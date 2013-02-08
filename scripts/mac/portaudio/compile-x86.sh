@@ -1,22 +1,18 @@
 #!/bin/sh
-#
 # Compiling portaudio
-# -----------------
-# - i686-apple-darwin11-llvm-g++-4.2
-# - i686-apple-darwin11-llvm-gcc-4.2:
-#
-# We had to remove the -wError from the Makefile
-#
 
 d=${PWD}
-bd=${d}/../build
+bd=${d}/../build32
 sd=${d}/../../sources/
 
 export PATH=${bd}/bin:${PATH}
+export CFLAGS="-m32 -arch i386" 
+export CPPFLAGS="${CFLAGS} -arch i386"
+export LDFLAGS="-arch i386"
 
 cd ${sd}/portaudio
 ./configure --prefix=${bd} --disable-mac-universal --enable-cxx
-cp ${d}/Makefile ${sd}/portaudio/
+cp ${d}/Makefile86 ${sd}/portaudio/Makefile
 make clean
 make 
 make install

@@ -25,7 +25,8 @@ export HARFBUZZ_CFLAGS="-I${bd}/include/ -I${bd}/include/harfbuzz/"
 
 cd ${sd}/pango
 ./configure --prefix=${bd} \
-    --enable-static=yes 
+    --enable-static=yes \
+    --with-included-modules=yes 
 
 make clean
 make V=1
