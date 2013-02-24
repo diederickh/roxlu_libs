@@ -17,16 +17,20 @@ export LIBFFI_LIBS="-L${wbd}/lib/ -lffi"
 export LIBFFI_CFLAGS="-I${wbd}/include/ -I${wbd}/lib/libffi-3.0.11/include/"
 export FREETYPE_CFLAGS="-I${wbd}/include/"
 export FREETYPE_LIBS="-L${wbd}/lib/ -lfreetype"
-export LIBXML2_CFLAGS="-I${wbd}/include/"
-export LIBXML2_LIBS="-L${wbd}/lib/ -lxml2"
+#export LIBXML2_CFLAGS="-I${wbd}/include/"
+#export LIBXML2_LIBS="-L${wbd}/lib/"
 
 
+#     --enable-static=yes \n
 cd ${sd}/fontconfig
-./configure --prefix=${bd} \
-    --enable-static=yes \
-    --enable-libxml2
+#./configure --prefix=${bd} \
+#    --enable-libxml2 \
+#    --enable-shared=yes \
+#    --enable-static=yes
 
-make clean
+./configure --prefix=${bd} --enable-libxml2 
+
+#make clean
 make V=1
 make install
 

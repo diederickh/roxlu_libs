@@ -21,7 +21,7 @@ CFG_CFLAGS := -MDd -Od -Zi -I/include/ -VERBOSE
 CFG_LDFLAGS := -DEBUG -Llib/
 else
 CFG_CFLAGS := -MD -O2  -I/c/roxlu_libs/scripts/win32/build/32/md/include
-CFG_LDFLAGS := -L$(BUILD_DIR)\lib
+#CFG_LDFLAGS := -L$(BUILD_DIR)\lib
 endif
 
 #PIXMAN_CFLAGS := -I$(top_srcdir)/../pixman/pixman
@@ -30,7 +30,7 @@ PIXMAN_CFLAGS := -I.\..\..\win32\build\32\md\include -I/c/roxlu_libs/scripts/win
 #PIXMAN_LIBS := $(BUILD_DIR)/lib/libpixman-1.a
 PIXMAN_LIBS := /c/roxlu_libs/scripts/win32/build/32/md/lib/pixman-1.lib
 
-CAIRO_LIBS =  gdi32.lib msimg32.lib user32.lib
+CAIRO_LIBS =  gdi32.lib msimg32.lib user32.lib 
 ifeq ($(CAIRO_HAS_PNG_FUNCTIONS),1)
 #LIBPNG_CFLAGS += -I$(top_srcdir)/../libpng/
 #CAIRO_LIBS +=  $(top_builddir)/../libpng/libpng.lib
@@ -45,7 +45,8 @@ ZLIB_CFLAGS += -I.\..\..\win32\build\32\md\include\
 #CAIRO_LIBS += /c/roxlu_libs/scripts/win32/build/32/md/lib/zdll.lib
 endif
 
-CAIRO_LIBS += /c/roxlu_libs/scripts/win32/build/32/md/lib/zdll.lib
+CAIRO_LIBS += c:\roxlu_libs\scripts\win32\build\32\md\lib\zdll.lib
+CAIRO_LIBS += c:\roxlu_libs\scripts\win32\build\32\md\lib\freetype.lib
 
 DEFAULT_CFLAGS = -nologo $(CFG_CFLAGS)
 DEFAULT_CFLAGS += -I. -I$(top_srcdir) -I$(top_srcdir)/src
@@ -63,11 +64,11 @@ CAIRO_ARFLAGS = $(DEFAULT_ARFLAGS) $(LDFLAGS)
 
 $(CFG)/%.obj: %.c $(top_srcdir)/src/cairo-features.h
 	@mkdir -p $(CFG)/`dirname $<`
-	@$(CC) $(CAIRO_CFLAGS) -c -Fo"$@" $<
+	$(CC) $(CAIRO_CFLAGS) -c -Fo"$@" $<
 
 $(CFG)/%-static.obj: %.c $(top_srcdir)/src/cairo-features.h
 	@mkdir -p $(CFG)/`dirname $<`
-	@$(CC) $(CAIRO_CFLAGS) -c -DCAIRO_WIN32_STATIC_BUILD=1 -Fo"$@" $<
+	$(CC) $(CAIRO_CFLAGS) -c -DCAIRO_WIN32_STATIC_BUILD=1 -Fo"$@" $<
 
 clean:
 	@rm -f $(CFG)/*.obj $(CFG)/*.dll $(CFG)/*.lib $(CFG)/*.pdb $(CFG)/*.ilk || exit 0

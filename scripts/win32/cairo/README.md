@@ -6,3 +6,8 @@
  * Goto: /c/roxlu_libs/scripts/sources/cairo
    - Execute: make -f Makefile.win32 "CFG=release"
      (if you want to clean, run: "make -f Makefile.win32 clean')
+ * When everything is compiled run install.sh
+
+ Configuring the build
+ ----------------------
+ - Enable/disable features in build/Makefile.win32.features
