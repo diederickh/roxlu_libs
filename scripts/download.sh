@@ -74,10 +74,11 @@ fi
 
 # glfw 
 if [ ! -d ${sd}/glfw ] ; then 
+    set -x
     mkdir ${sd}/glfw
     cd ${sd}/glfw/
     git clone https://github.com/elmindreda/glfw.git .
-    git reset --hard 747b6d880563c0461df028d9e287652f16de7b17
+   # git reset --hard 747b6d880563c0461df028d9e287652f16de7b17
 fi
 
 function download {

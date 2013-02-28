@@ -4,6 +4,14 @@
 # - i686-apple-darwin11-llvm-g++-4.2
 # - i686-apple-darwin11-llvm-gcc-4.2
 #
+# On mac you need to compile with these flags:
+#        --enable-static=yes
+#        --with-dynamic-modules=no
+#        --with-included-moduels=yes
+#
+# These flags make sure that pango isn't looking into /etc/pango/pango.modules
+# to find script related libraries.
+#
 d=${PWD}
 bd=${d}/../build
 sd=${d}/../../sources/
@@ -25,11 +33,15 @@ export FREETYPE_LIBS="-L${bd}/lib/ -lfreetype"
 export LIBS="-L${bd}/lib/ -framework CoreFoundation -framework ApplicationServices"
 
 # --with-included-modules, makes static libs for the pango modules available
+# --with-dynamic-modules=no  --disable-shared
+
 
 cd ${sd}/pango
 ./configure --prefix=${bd} \
     --enable-static=yes \
-    --with-included-modules=yes
+    --with-dynamic-modules=no \
+    --with-included-modules=yes 
+
 
 make clean
 make V=1

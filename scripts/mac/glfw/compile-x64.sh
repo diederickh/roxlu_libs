@@ -21,6 +21,7 @@ cd ${sd}/glfw
 mkdir compile_with_cmake
 cd compile_with_cmake
 cmake -DCMAKE_INSTALL_PREFIX=${bd} ../
+rm ${bd}/includes/GL/glfw3.h
 cmake --build . --target install
 
 
