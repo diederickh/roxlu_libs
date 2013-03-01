@@ -146,3 +146,4 @@ download winiconv "https://github.com/downloads/hexchat/gtk-win32/win-iconv-0.0.
 download m4 "http://ftp.gnu.org/gnu/m4/m4-1.4.16.tar.gz" "m4-1.4.16.tar.gz" "m4-1.4.16" 0
 download glew "https://sourceforge.net/projects/glew/files/glew/1.9.0/glew-1.9.0.tgz/download" "glew-1.9.0.tgz" "glew-1.9.0" 0
 download libxslt "ftp://xmlsoft.org/libxslt/libxslt-1.1.28.tar.gz" "libxslt-1.1.28.tar.gz" "libxslt-1.1.28" 0
+download libconfig "http://www.hyperrealm.com/libconfig/libconfig-1.4.9.tar.gz" "libconfig-1.4.9.tar.gz" "libconfig-1.4.9" 0

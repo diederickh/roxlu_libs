@@ -54,7 +54,8 @@
  - libshout
  - libav
  - glfw
- - glew
+ - glew 
+ - libconfig
 
 32bit done
 -----------
