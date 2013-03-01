@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ROXLU_LIBS_DIR>C:\roxlu_libs\scripts\win32\build\32\md\</ROXLU_LIBS_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ROXLU_LIBS_DIR)\lib\glib-2.0\include\;$(ROXLU_LIBS_DIR)\include\glib-2.0\;$(ROXLU_LIBS_DIR)\include\harfbuzz\;$(ROXLU_LIBS_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\roxlu_libs\scripts\win32\build\32\md\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ROXLU_LIBS_DIR">
+      <Value>$(ROXLU_LIBS_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

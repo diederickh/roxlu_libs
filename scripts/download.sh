@@ -130,7 +130,7 @@ download glib "http://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.
 download pkgconfig "http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.tar.gz" "pkg-config-0.27.tar.gz" "pkg-config-0.27" 0
 download pixman "http://cairographics.org/releases/pixman-0.28.2.tar.gz" "pixman-0.28.2.tar.gz" "pixman-0.28.2" 0 
 download freetype "http://download.savannah.gnu.org/releases/freetype/freetype-2.4.11.tar.gz" "freetype-2.4.11.tar.gz" "freetype-2.4.11" 0
-download fontconfig "http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2.tar.gz" "fontconfig-2.10.2" 0
+download fontconfig "http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.gz" "fontconfig-2.10.91.tar.gz" "fontconfig-2.10.91" 0
 download zlib "http://zlib.net/zlib-1.2.7.tar.gz" "zlib-1.2.7.tar.gz" "zlib-1.2.7" 0
 download poppler "http://poppler.freedesktop.org/poppler-0.22.0.tar.gz" "poppler-0.22.0.tar.gz" "poppler-0.22.0" 0
 download harfbuzz "http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12.tar.bz2" "harfbuzz-0.9.12" 1

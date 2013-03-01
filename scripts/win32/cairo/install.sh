@@ -14,6 +14,7 @@ cp src/cairo-win32.h ${id}/
 cp src/cairo-ps.h ${id}/
 cp src/cairo-pdf.h ${id}/
 cp src/cairo-svg.h ${id}/
+cp src/cairo-ft.h ${id}/
 cp src/release/cairo.dll ${bd}/bin/
 cp src/release/cairo-static.lib ${bd}/lib/
 cp src/release/cairo.lib ${bd}/lib/

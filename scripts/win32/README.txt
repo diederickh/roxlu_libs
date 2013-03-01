@@ -25,8 +25,6 @@ Compile the libraries in this order, and using /MD runtime
 - theora
 - liblamemp3
 - libspeex
-- libvpx         - used the mingw script to build libvpx
-- libav          - used the mingw script to build libav
 - curl
 - speex
 - x264           - used the mingw script to build libav
@@ -36,6 +34,9 @@ Compile the libraries in this order, and using /MD runtime
 - glew
 - portaudio
 - libuv
+- jansson
+- pcre 
+
 
 TODO
 ----

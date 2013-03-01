@@ -8,8 +8,8 @@
                              GlibEtcInstallRoot: c:\roxlu_libs\scripts\win32\build\32\md\
    
    Common Properties > Linker > Input:
-                             intl.lib > libint.lib (change this one)
-                             zdll.lib (add this one) 
+                             intl.lib > libintl.lib (change this one)
+                             zlib.lib (add this one) 
 
 
  * Select all projects in the Property Manager
