@@ -81,6 +81,13 @@ if [ ! -d ${sd}/glfw ] ; then
    # git reset --hard 747b6d880563c0461df028d9e287652f16de7b17
 fi
 
+# glxw (opengl 3.x + functions)
+if [ ! -d ${sd}/glxw ] ; then 
+    mkdir ${sd}/glxw 
+    cd ${sd}/glxw
+    git clone git://github.com/rikusalminen/glxw.git .
+fi
+
 function download {
     dir=${1}
     url=${2}
