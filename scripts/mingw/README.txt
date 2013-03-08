@@ -9,5 +9,6 @@ we use MingW to compile static libraries.
 - pixman 
 - libvpx
 - libav
+- libsndfile - is pure C99 can't be compiled with MSVC
 
 
