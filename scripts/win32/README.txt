@@ -27,15 +27,16 @@ Compile the libraries in this order, and using /MD runtime
 - libspeex
 - curl
 - speex
-- x264           - used the mingw script to build libav
+- x264           - used the mingw script to build x264
 - libav          - used the mingw script to build libav
-- libvpx         - used the mingw script to build libav <=== todo not finished
+- libvpx         - used the mingw script to build libvpx
 - glfw
 - glew
 - portaudio
 - libuv
 - jansson
 - pcre 
+- libsndfile    - used mingw script to build libsnd (as it's pure C99)
 
 
 TODO
