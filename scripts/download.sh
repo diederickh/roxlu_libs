@@ -88,6 +88,20 @@ if [ ! -d ${sd}/glxw ] ; then
     git clone git://github.com/rikusalminen/glxw.git .
 fi
 
+# ftgl
+if [ ! -d ${sd}/ftgl ] ; then 
+    mkdir ${sd}/ftgl
+    cd ${sd}/ftgl
+    svn co https://ftgl.svn.sourceforge.net/svnroot/ftgl .
+fi
+
+# open image io
+if [ ! -d ${sd}/oiio ] ; then 
+    mkdir ${sd}/oiio
+    cd ${sd}/oiio
+    git clone git://github.com/OpenImageIO/oiio.git .
+fi
+
 function download {
     dir=${1}
     url=${2}
@@ -155,3 +169,5 @@ download glew "https://sourceforge.net/projects/glew/files/glew/1.9.0/glew-1.9.0
 download libxslt "ftp://xmlsoft.org/libxslt/libxslt-1.1.28.tar.gz" "libxslt-1.1.28.tar.gz" "libxslt-1.1.28" 0
 download libconfig "http://www.hyperrealm.com/libconfig/libconfig-1.4.9.tar.gz" "libconfig-1.4.9.tar.gz" "libconfig-1.4.9" 0
 download libsndfile "http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz" "libsndfile-1.0.25.tar.gz" "libsndfile-1.0.25" 0
+download mysql-connector-c "http://dev.mysql.com/get/Downloads/Connector-C/mysql-connector-c-6.0.2.tar.gz/from/http://cdn.mysql.com/" "mysql-connector-c-6.0.2.tar.gz" "mysql-connector-c-6.0.2" 0
+download argtable "http://prdownloads.sourceforge.net/argtable/argtable2-13.tar.gz" "argtable2-13.tar.gz" "argtable2-13" 0
